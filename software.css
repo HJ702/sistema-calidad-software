@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #78a9c8; /* Azul en toda la pantalla */
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== Headings ===== */
+.header {
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: clamp(22px, 2.7vw, 34px);
+  margin: 0 0 6px 0;
+}
+
+.header h2 {
+  font-weight: 600;
+  font-size: clamp(18px, 2.2vw, 26px);
+  margin: 0;
+  opacity: .95;
+}
+
+/* ===== Search pill ===== */
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  height: 58px;
+  width: 100%;
+}
+
+.search-pill {
+  flex: 0 1 520px;
+  max-width: 600px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+  gap: 10px;
+}
+
+/* Lupa */
+.search-icon {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #214aee;
+  border-radius: 50%;
+  position: relative;
+}
+
+.search-icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background: #214aee;
+  top: 10px;
+  left: 10px;
+  transform: rotate(45deg);
+}
+
+/* Input */
+.search-pill input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #0f2940;
+  background: transparent;
+}
+
+/* Botón hamburguesa */
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 260px;
+  height: 100%;
+  background: #4682b4; /* mismo color que el fondo */
+  color: #fff;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar .close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #0c0202;
+  cursor: pointer;
+  float: right;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 80px 0 0; /* desplaza los items hacia abajo */
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  text-decoration: underline;
+}
+
+.sidebar ul li a {
+  color: white;              /* color del link */
+  text-decoration: none;     /* quita subrayado */
+  display: block;
+}
+
+.sidebar ul li a:visited {
+  color: white;              /* evita color azul/morado tras visitar */
+}
+
+.sidebar ul li a:hover {
+  background: #555;          /* efecto hover */
+  color: white;              /* color sigue igual */
+}

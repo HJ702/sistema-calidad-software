@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de gestión de calidad de software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="software.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Sistema de gestión de calidad de software</h1>
+    <h2>Inicio</h2>
+  </header>
+
+  <section class="hero">
+    <div class="search-pill" role="search" aria-label="Buscar">
+      <span class="search-icon"></span>
+      <button class="menu-btn" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <input type="text" placeholder="Buscar..." />
+    </div>
+  </section>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <button class="close-btn" id="close-btn"></button>
+    <ul>
+  <li><a href="GestionCalidad.html">Gestión de calidad de software</a></li>
+  <li><a href="ProcesoDesarrollo.html">Proceso de desarrollo de software</a></li>
+  <li><a href="Metodologias.html">Metodologías en detalle</a></li>
+  <li><a href="Recursos.html">Recursos y aprendizaje</a></li>
+  <li><a href="Adicionales.html">Adicionales</a></li>
+  <li><a href="FuncionalidadJS.html">Funcionalidad adicional JavaScript</a></li>
+</ul>
+
+  </nav>
+
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    const toggleBtn = document.getElementById("menu-toggle");
+    const closeBtn = document.getElementById("close-btn");
+
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- Plantilla base actualizada con nuevo CSS -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de ejemplo</title>
+  <link rel="stylesheet" href="software.css">
+</head>
+<body>
+  <!-- Botón hamburguesa -->
+  <button class="menu-btn" onclick="document.querySelector('.sidebar').classList.add('open')">☰</button>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <button class="close-btn" onclick="document.querySelector('.sidebar').classList.remove('open')">×</button>
+    <ul>
+      <li><a href="PaginaPrincipal.html">Inicio</a></li>
+      <li><a href="GestionCalidad.html">Gestión de calidad de software</a></li>
+      <li><a href="ProcesoDesarrollo.html">Proceso de desarrollo de software</a></li>
+      <li><a href="Metodologias.html">Metodologías en detalle</a></li>
+      <li><a href="Recursos.html">Recursos y aprendizaje</a></li>
+      <li><a href="Adicionales.html">Adicionales</a></li>
+      <li><a href="FuncionalidadJS.html">Funcionalidad adicional JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Sistema de gestión de calidad de software</h1>
+    <h2>Funcionalidad adicional JavaScript</h2>
+  </header>
+
+  <section class="hero">
+    <div class="search-pill">
+      <div class="search-icon"></div>
+      <input type="text" placeholder="Buscar...">
+    </div>
+  </section>
+
+  <main>
+    <p>Contenido de la página.</p>
+  </main>
+</body>
+</html>
