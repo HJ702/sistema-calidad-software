@@ -1,54 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema de gestión de calidad de software</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="software.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería — Temas</title>
+  <link rel="stylesheet" href="software.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Sistema de gestión de calidad de software</h1>
-    <h2>Inicio</h2>
-  </header>
+  <div class="page">
+    <header>
+      <h1>Sistema De Calidad De Software</h1>
+      
+    </header>
 
-  <section class="hero">
-    <div class="search-pill" role="search" aria-label="Buscar">
-      <span class="search-icon"></span>
-      <button class="menu-btn" id="menu-toggle" aria-label="Abrir menú">☰</button>
-      <input type="text" placeholder="Buscar..." />
-    </div>
-  </section>
+    <main class="grid">
+      <a class="card" href="GestionCalidad.html">
+        <span class="title">Gestion De Calidad De Software</span>
+        <div class="desc">Descripción breve del Tema 1.</div>
+      </a>
 
-  <!-- Sidebar -->
-  <nav class="sidebar" id="sidebar">
-    <button class="close-btn" id="close-btn"></button>
-    <ul>
-  <li><a href="GestionCalidad.html">Gestión de calidad de software</a></li>
-  <li><a href="ProcesoDesarrollo.html">Proceso de desarrollo de software</a></li>
-  <li><a href="Metodologias.html">Metodologías en detalle</a></li>
-  <li><a href="Recursos.html">Recursos y aprendizaje</a></li>
-  <li><a href="Adicionales.html">Adicionales</a></li>
-  <li><a href="FuncionalidadJS.html">Funcionalidad adicional JavaScript</a></li>
-</ul>
+      <a class="card" href="ProcesoDesarrollo.html">
+        <span class="title">Proceso De Desarrollo De Software</span>
+        <div class="desc">Descripción breve del Tema 2.</div>
+      </a>
 
-  </nav>
+      <a class="card" href="Metodologias.html">
+        <span class="title">Metodologias En Detalle</span>
+        <div class="desc">Descripción breve del Tema 3.</div>
+      </a>
 
-  <script>
-    const sidebar = document.getElementById("sidebar");
-    const toggleBtn = document.getElementById("menu-toggle");
-    const closeBtn = document.getElementById("close-btn");
+      <a class="card" href="Recursos.html">
+        <span class="title">Recursos y Aprendizaje</span>
+        <div class="desc">Descripción breve del Tema 4.</div>
+      </a>
 
-    toggleBtn.addEventListener("click", () => {
-      sidebar.classList.add("open");
-    });
+      <a class="card" href="Adicionales.html">
+        <span class="title">Adicionales</span>
+        <div class="desc">Descripción breve del Tema 5.</div>
+      </a>
 
-    closeBtn.addEventListener("click", () => {
-      sidebar.classList.remove("open");
-    });
-  </script>
+      <a class="card" href="FuncionalidadJS.html">
+        <span class="title">Funcionalidad Adicional JavaScript</span>
+        <div class="desc">Descripción breve del Tema 6.</div>
+      </a>
+    </main>
+  </div>
 </body>
 </html>

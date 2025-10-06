@@ -1,129 +1,84 @@
-<!-- Plantilla base actualizada con nuevo CSS -->
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de ejemplo</title>
-  <link rel="stylesheet" href="software.css">
+  <title>Gestión de calidad de software</title>
+  <link rel="stylesheet" href="GestionCalidad.css">
 </head>
 <body>
-  <!-- Botón hamburguesa -->
-  <button class="menu-btn" onclick="document.querySelector('.sidebar').classList.add('open')">☰</button>
-
-  <!-- Sidebar -->
-  <nav class="sidebar">
-    <button class="close-btn" onclick="document.querySelector('.sidebar').classList.remove('open')">×</button>
-    <ul>
-      <li><a href="PaginaPrincipal.html">Inicio</a></li>
-      <li><a href="GestionCalidad.html">Gestión de calidad de software</a></li>
-      <li><a href="ProcesoDesarrollo.html">Proceso de desarrollo de software</a></li>
-      <li><a href="Metodologias.html">Metodologías en detalle</a></li>
-      <li><a href="Recursos.html">Recursos y aprendizaje</a></li>
-      <li><a href="Adicionales.html">Adicionales</a></li>
-      <li><a href="FuncionalidadJS.html">Funcionalidad adicional JavaScript</a></li>
-    </ul>
-  </nav>
 
   <header class="header">
     <h1>Sistema de gestión de calidad de software</h1>
-    <h2>Gestion de calidad de software</h2>
+    <h2>Gestión de calidad de software</h2>
   </header>
 
-  <section class="hero">
-    <div class="search-pill">
-      <div class="search-icon"></div>
-      <input type="text" placeholder="Buscar...">
-    </div>
-  </section>
-
   <main>
-    <p>El concepto de calidad no es algo actual, ya desde antes en la edad media por temas de ventas de alimentos en mal estado. Se condenaba a las personas a la muerte y se exigía mucho que se vendieran productos de buena calidad.
+    <p>El concepto de calidad no es algo actual, ya desde antes en la Edad Media por temas de ventas de alimentos en mal estado. Se condenaba a las personas a la muerte y se exigía mucho que se vendieran productos de buena calidad.</p>
 
+    <h3>Plan de pruebas</h3>
 
-De acuerdo con Sommerville (2011), la calidad del software se entiende como la medida en que un sistema satisface las necesidades explícitas e implícitas de los usuarios. No existe una única definición universal, pero la calidad siempre implica tanto el cumplimiento de requisitos funcionales y no funcionales como la conformidad con estándares y buenas prácticas.
+    <p>De acuerdo con Sommerville (2011), la calidad del software se entiende como la medida en que un sistema satisface las necesidades explícitas e implícitas de los usuarios. No existe una única definición universal, pero la calidad siempre implica tanto el cumplimiento de requisitos funcionales y no funcionales como la conformidad con estándares y buenas prácticas.</p>
 
-Se indentifican diversos atributos de calidad que permiten evaluar un producto:
+    <p>Se identifican diversos atributos de calidad que permiten evaluar un producto:</p>
 
-Fiabilidad: capacidad del sistema de funcionar sin fallos durante un período determinado.
+    <ul>
+      <li><strong>Fiabilidad:</strong> capacidad del sistema de funcionar sin fallos durante un período determinado.</li>
+      <li><strong>Usabilidad:</strong> facilidad de aprendizaje y de uso del sistema por parte de los usuarios.</li>
+      <li><strong>Eficiencia:</strong> uso adecuado de recursos como tiempo de CPU o memoria.</li>
+      <li><strong>Mantenibilidad:</strong> grado en que un sistema puede ser modificado para corregir errores o adaptarse a cambios.</li>
+      <li><strong>Portabilidad:</strong> facilidad con la que el software puede trasladarse a diferentes entornos.</li>
+    </ul>
 
-Usabilidad: facilidad de aprendizaje y de uso del sistema por parte de los usuarios.
+    <p>Las métricas en ingeniería de software son medidas numéricas de características cuantificables del software o del proceso de desarrollo, usadas para planificar, controlar y predecir proyectos, y para asegurar la calidad y optimizar la eficiencia.</p>
 
-Eficiencia: uso adecuado de recursos como tiempo de CPU o memoria.
+    <p>Se utilizan para evaluar aspectos como la complejidad del código, la productividad del equipo, el rendimiento del software y el número de errores, basándose en objetivos preestablecidos para obtener información útil que guíe la toma de decisiones y mejore los procesos.</p>
 
-Mantenibilidad: grado en que un sistema puede ser modificado para corregir errores o adaptarse a cambios.
+    <h3>Tipos de métricas y ejemplos</h3>
 
-Portabilidad: facilidad con la que el software puede trasladarse a diferentes entornos.</p>
-<p>Las métricas en ingeniería de software son medidas numéricas de características cuantificables del software o del proceso de desarrollo, usadas para planificar, controlar, y predecir proyectos, y para asegurar la calidad y optimizar la eficiencia. 
-Se utilizan para evaluar aspectos como la complejidad del código, la productividad del equipo, el rendimiento del software, y el número de errores, basándose en objetivos preestablecidos para obtener información útil que guíe la toma de decisiones y mejore los procesos. 
-Tipos de métricas y ejemplos:
-Las métricas se pueden clasificar de diversas maneras, incluyendo:
+    <ul>
+      <li><strong>Métricas de calidad:</strong> Miden atributos como la fiabilidad y la usabilidad del software.  
+        <br>MTBF (Tiempo medio entre fallos): indica la fiabilidad del sistema al medir el tiempo entre dos fallos.  
+        <br>Tasa de escape de defectos: revela problemas de calidad antes de que lleguen a los clientes.  
+        <br>Métricas de seguridad: evalúan los riesgos de seguridad en el software.
+      </li>
 
-Métricas de calidad:Miden atributos como la fiabilidad y la usabilidad del software.MTBF (Tiempo medio entre fallos): Indica la fiabilidad del sistema al medir el tiempo entre dos fallos.
-Tasa de escape de defectos: Revela problemas de calidad antes de que lleguen a los clientes.Métricas de seguridad: Evalúan los riesgos de seguridad en el software.
+      <li><strong>Métricas de proceso:</strong> Se enfocan en la eficacia y eficiencia del proceso de desarrollo.  
+        <br>Cobertura de pruebas: cuantifica qué porcentaje de código ha sido cubierto por las pruebas.  
+        <br>Tiempo de ciclo: mide la rapidez con la que se completan las tareas.  
+        <br>Frecuencia de implementación: mide cuántas veces se lanzan cambios a producción.
+      </li>
 
- Métricas de proceso: Se enfocan en la eficacia y eficiencia del proceso de desarrollo.
-Cobertura de pruebas: Cuantifica qué porcentaje de código ha sido cubierto por las pruebas, ayudando a identificar áreas no probadas.
-Tiempo de ciclo: Indica la rapidez con la que se completan las tareas, lo que permite una retroalimentación más rápida y menos cambios de contexto.Frecuencia de implementación: Mide cuántas veces se lanzan cambios a producción, con lanzamientos frecuentes que reducen el riesgo. Métricas de tamaño y 
-función:Líneas de código (LOC): Miden el tamaño del software, aunque no siempre reflejan la complejidad o el esfuerzo real.Puntos de función: Una métrica orientada a la función que mide la funcionalidad del software independientemente de la tecnología utilizada. </p>
-<p>US-3: Técnicas de Aseguramiento de la Calidad
+      <li><strong>Métricas de tamaño y función:</strong>  
+        <br>Líneas de código (LOC): miden el tamaño del software.  
+        <br>Puntos de función: miden la funcionalidad del software independientemente de la tecnología utilizada.
+      </li>
+    </ul>
 
-El aseguramiento de la calidad del software (SQA) consiste en un conjunto de actividades planificadas y sistemáticas destinadas a garantizar que los procesos y productos de software cumplan con los estándares establecidos (Sommerville, 2011, p. 680).
+    <h3>Estándares internacionales</h3>
 
-En el área de pruebas, el autor diferencia niveles de verificación:
+    <p>En cuanto a estándares internacionales, Sommerville (2011) destaca la <strong>ISO/IEC 9126</strong>, que establece un modelo de calidad basado en seis características principales, y la <strong>ISO/IEC 25000 (SQuaRE)</strong>, sucesora de la anterior, que amplía el marco de métricas y procesos de evaluación de calidad.</p>
 
-Pruebas unitarias: evalúan componentes individuales (p. 220).
+    <h3>US-3: Técnicas de aseguramiento de la calidad</h3>
 
-Pruebas de integración: comprueban la interacción entre módulos (p. 222).
+    <p>El aseguramiento de la calidad del software (SQA) consiste en un conjunto de actividades planificadas y sistemáticas destinadas a garantizar que los procesos y productos de software cumplan con los estándares establecidos (Sommerville, 2011, p. 680).</p>
 
-Pruebas de sistema: validan el sistema completo frente a los requisitos (p. 224).
+    <p>En el área de pruebas, el autor diferencia niveles de verificación:</p>
+    <ul>
+      <li><strong>Pruebas unitarias:</strong> evalúan componentes individuales.</li>
+      <li><strong>Pruebas de integración:</strong> comprueban la interacción entre módulos.</li>
+      <li><strong>Pruebas de sistema:</strong> validan el sistema completo frente a los requisitos.</li>
+      <li><strong>Pruebas de aceptación:</strong> se realizan con el cliente/usuario para confirmar que el software satisface sus expectativas.</li>
+    </ul>
 
-Pruebas de aceptación: se realizan con el cliente/usuario para confirmar que el software satisface sus expectativas (p. 225).
-</p>
-<p>Respecto a técnicas de prueba, Sommerville describe:
+    <h3>Técnicas de prueba</h3>
 
-Caja blanca: analiza la estructura interna del código y su flujo de ejecución.
+    <ul>
+      <li><strong>Caja blanca:</strong> analiza la estructura interna del código y su flujo de ejecución.</li>
+      <li><strong>Caja negra:</strong> evalúa únicamente entradas y salidas sin considerar la implementación interna.</li>
+    </ul>
 
-Caja negra: evalúa únicamente entradas y salidas, sin considerar la implementación interna (pp. 228-230).
-Además, el autor reconoce la importancia de técnicas como las pruebas de regresión y la automatización de pruebas, fundamentales en proyectos de gran escala.
-x
-US-4: Herramientas de Calidad
-
-Las herramientas de apoyo a la calidad complementan las prácticas de SQA. Según Sommerville (2011), estas permiten mejorar la gestión, el seguimiento y el análisis del software durante su ciclo de vida (pp. 690-691).
-
-Se distinguen principalmente tres tipos:
-
-Gestión de pruebas: herramientas que documentan, planifican y controlan la ejecución de pruebas.
-
-
-Seguimiento de defectos: sistemas que registran errores, asignan responsables y monitorizan el estado de corrección.
-
-
-Análisis de calidad: herramientas de análisis estático del código y entornos de integración continua que permiten detectar defectos de manera temprana y automatizar la verificación de requisitos de calidad.
-</p>
-<p>Trello y Jira son herramientas de gestión de proyectos basadas en metodologías ágiles, pero se diferencian por su complejidad y enfoque. Trello es una herramienta sencilla basada en tableros Kanban para organizar tareas visualmente, ideal para proyectos personales y de equipos pequeños. Jira es más robusta, orientada al desarrollo de software, y ofrece tableros Scrum y Kanban, seguimiento de incidencias y planificación de sprints para proyectos complejos y equipos grandes. 
-</p>
-<p>Trello
-Enfoque:
-Principalmente utiliza el modelo Kanban, con tableros y tarjetas arrastrables para una gestión visual del flujo de trabajo.
-Ideal para:
-Proyectos personales, colaboración en equipo para tareas simples, y para quienes buscan una herramienta de gestión de tareas intuitiva y fácil de usar.
-Facilidad de uso:
-Ofrece una interfaz simple y visual, con una curva de aprendizaje baja.
-Funciones:
-Tableros, listas, tarjetas, listas de verificación y automatización con su herramienta Butler. </p>
-<p>Jira
-Enfoque:
-Herramienta completa para equipos de desarrollo de software que siguen metodologías ágiles, soportando Scrum, Kanban y Scrumban (una combinación de ambos).
-Ideal para:
-Proyectos complejos, seguimiento detallado de incidencias (errores), gestión de lanzamientos y para equipos que necesitan planificación detallada y métricas de rendimiento. 
-Funciones:
-Planificación de sprints, seguimiento de incidencias y errores, informes detallados, personalización avanzada del flujo de trabajo y una amplia gama de integraciones.
-Complejidad:
-Es más potente pero también más compleja, requiriendo una curva de aprendizaje mayor debido a su gran cantidad de funciones.
-¿Cuál elegir?
-Elige Trello si necesitas una herramienta rápida y visual para gestionar tareas simples, o para proyectos personales. Elige Jira situ equipo es de desarrollo de software, trabajas con metodologías ágiles complejas, y necesitas rastrear incidencias en profundidad y generar informes detallados.
-</p>
+    <p>Además, el autor reconoce la importancia de técnicas como las pruebas de regresión y la automatización de pruebas, fundamentales en proyectos de gran escala.</p>
   </main>
+
 </body>
 </html>

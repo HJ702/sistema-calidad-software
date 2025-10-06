@@ -1,44 +1,73 @@
-<!-- Plantilla base actualizada con nuevo CSS -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de ejemplo</title>
-  <link rel="stylesheet" href="software.css">
+  <title>Metodologías Ágiles: Scrum y Kanban</title>
+  <link rel="stylesheet" href="Metodologias.css">
 </head>
 <body>
-  <!-- Botón hamburguesa -->
-  <button class="menu-btn" onclick="document.querySelector('.sidebar').classList.add('open')">☰</button>
 
-  <!-- Sidebar -->
-  <nav class="sidebar">
-    <button class="close-btn" onclick="document.querySelector('.sidebar').classList.remove('open')">×</button>
-    <ul>
-      <li><a href="PaginaPrincipal.html">Inicio</a></li>
-      <li><a href="GestionCalidad.html">Gestión de calidad de software</a></li>
-      <li><a href="ProcesoDesarrollo.html">Proceso de desarrollo de software</a></li>
-      <li><a href="Metodologias.html">Metodologías en detalle</a></li>
-      <li><a href="Recursos.html">Recursos y aprendizaje</a></li>
-      <li><a href="Adicionales.html">Adicionales</a></li>
-      <li><a href="FuncionalidadJS.html">Funcionalidad adicional JavaScript</a></li>
-    </ul>
-  </nav>
-
-  <header class="header">
-    <h1>Sistema de gestión de calidad de software</h1>
-    <h2>Metodologías en detalle</h2>
+  <header class="header header-agile">
+    <h1>Metodologías Ágiles: Scrum y Kanban</h1>
+    <h2>Organización y gestión de proyectos de software</h2>
   </header>
 
-  <section class="hero">
-    <div class="search-pill">
-      <div class="search-icon"></div>
-      <input type="text" placeholder="Buscar...">
-    </div>
-  </section>
-
   <main>
-    <p>Contenido de la página.</p>
+    <h3>US-10: Scrum</h3>
+    <p>Scrum es la metodología ágil más popular. Se organiza en Sprints (iteraciones de 2 a 4 semanas).</p>
+
+    <h4>Roles</h4>
+    <ul>
+      <li><strong>Product Owner:</strong> define prioridades y requisitos, mantiene el Product Backlog, comunica la visión del producto y recoge retroalimentación.</li>
+      <li><strong>Scrum Master:</strong> facilita el proceso, elimina obstáculos y asegura que Scrum se adopte correctamente.</li>
+      <li><strong>Equipo de desarrollo:</strong> construye el producto. Incluye programadores, documentadores y diseñadores, cada uno con responsabilidades específicas.</li>
+    </ul>
+
+    <h4>Eventos (ceremonias)</h4>
+    <ul>
+      <li><strong>Sprint Planning:</strong> define qué se hará en el sprint y cómo, estableciendo el Sprint Goal.</li>
+      <li><strong>Daily Scrum:</strong> reunión diaria de 15 min para sincronizar avances y detectar obstáculos.</li>
+      <li><strong>Sprint Review:</strong> revisión del producto desarrollado y retroalimentación de stakeholders.</li>
+      <li><strong>Sprint Retrospective:</strong> reflexión sobre cómo mejorar el proceso para el próximo Sprint.</li>
+    </ul>
+
+    <h4>Artefactos</h4>
+    <ul>
+      <li><strong>Product Backlog:</strong> lista priorizada de requisitos y mejoras del producto, gestionada por el Product Owner.</li>
+      <li><strong>Sprint Backlog:</strong> tareas seleccionadas para un Sprint, definidas por el equipo de desarrollo.</li>
+      <li><strong>Incremento:</strong> entrega de software lista para usar, cumpliendo la Definition of Done.</li>
+    </ul>
+
+    <h3>US-11: Kanban</h3>
+    <p>Kanban es un método de gestión del trabajo que ayuda a visualizar, priorizar y dar seguimiento a las tareas de un equipo o proyecto.</p>
+
+    <h4>Principios y uso</h4>
+    <ul>
+      <li>Visualizar el trabajo → Usar un tablero con columnas para ver el estado de cada tarea.</li>
+      <li>Limitar el trabajo en progreso (WIP) → Evitar sobrecarga estableciendo un máximo de tareas por columna.</li>
+      <li>Gestionar el flujo → Observar cómo las tareas avanzan de una columna a otra y mejorar continuamente.</li>
+      <li>Hacer explícitas las políticas → Definir reglas claras sobre el movimiento de tareas.</li>
+      <li>Mejorar de forma continua → Analizar métricas para optimizar productividad.</li>
+    </ul>
+
+    <h4>Tablero y elementos</h4>
+    <ul>
+      <li>Columnas: Pendiente → En Progreso → Terminado (pueden incluir revisado).</li>
+      <li>Tarjetas: representan tareas o elementos de trabajo.</li>
+      <li>Límites de WIP: cantidad máxima de tareas en cada etapa.</li>
+    </ul>
+
+    <h4>Beneficios</h4>
+    <ul>
+      <li>Transparencia: todos ven qué se está haciendo y qué falta.</li>
+      <li>Flexibilidad: se adapta a diferentes proyectos y equipos.</li>
+      <li>Mejora del flujo: evita bloqueos y cuellos de botella.</li>
+      <li>Priorización clara: identifica tareas urgentes.</li>
+      <li>Entrega continua: permite entregar valor incremental sin esperar grandes fases.</li>
+    </ul>
+
   </main>
+
 </body>
 </html>

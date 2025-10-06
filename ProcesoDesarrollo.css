@@ -1,0 +1,107 @@
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8fafc;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   Encabezado
+========================= */
+.header {
+  background: linear-gradient(135deg, #0066cc, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 2.2em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.header h2 {
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #e0f7ff;
+}
+
+/* Encabezado para herramientas (color diferente) */
+.header-tools {
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+}
+
+/* =========================
+   Contenido principal
+========================= */
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Párrafos */
+main p {
+  margin-bottom: 20px;
+  font-size: 1.05em;
+  text-align: justify;
+}
+
+/* Listas */
+ul {
+  background: #fef3f3;
+  border-left: 4px solid #f06595;
+  padding: 15px 30px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Títulos */
+h3 {
+  color: #d6336c;
+  margin-top: 35px;
+  font-size: 1.4em;
+  border-bottom: 2px solid #f8c1d8;
+  padding-bottom: 5px;
+}
+
+/* Destacados */
+strong {
+  color: #a61e4d;
+}
+
+/* Enlaces */
+a {
+  color: #d6336c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsividad
+========================= */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  main {
+    margin: 20px;
+    padding: 25px;
+  }
+}
