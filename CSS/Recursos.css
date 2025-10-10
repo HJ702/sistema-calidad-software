@@ -1,0 +1,103 @@
+/* =========================
+   Estilos generales
+========================= */
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  /* =========================
+     Encabezado
+  ========================= */
+  .header {
+    background: linear-gradient(135deg, #c206c2, #c20664);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  .header h2 {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #e0f7ff;
+  }
+  
+  /* =========================
+     Contenido principal
+  ========================= */
+  main {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Párrafos */
+  main p {
+    margin-bottom: 20px;
+    font-size: 1.05em;
+    text-align: justify;
+  }
+  
+  /* Listas */
+  ul {
+    background: #f1f8ff;
+    border-left: 4px solid #0096c7;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Títulos */
+  h3 {
+    color: #0077b6;
+    margin-top: 35px;
+    font-size: 1.4em;
+  }
+  
+  /* Destacados */
+  strong {
+    color: #023e8a;
+  }
+  
+  /* Enlaces (si los hay) */
+  a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     Responsividad
+  ========================= */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 1.8em;
+    }
+  
+    main {
+      margin: 20px;
+      padding: 25px;
+    }
+  }
