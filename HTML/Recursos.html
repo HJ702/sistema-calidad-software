@@ -1,22 +1,99 @@
-<!-- Plantilla base actualizada con nuevo CSS -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de ejemplo</title>
-  <link rel="stylesheet" href="../CSS/Recursos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos - Proceso de Desarrollo de Software</title>
+  <link rel="stylesheet" href="../CSS/Recursos.css" />
 </head>
 <body>
-
   <header class="header">
-    <h1>Sistema de gestión de calidad de software</h1>
-    <h2>Recursos y aprendizaje</h2>
+    <h1>Recursos</h1>
+    <h2>Herramientas de apoyo para el proceso de desarrollo de software</h2>
   </header>
 
-  <main>
-    <p>AAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+  <main class="container">
+    <section class="intro card">
+      <p>
+        Esta sección tiene como objetivo ofrecer herramientas de apoyo para reforzar el conocimiento adquirido en los temas anteriores.
+      </p>
+    </section>
+
+    <section class="tools card">
+      <h3>5.1 Glosario</h3>
+      <ul>
+        <li><strong>Backlog:</strong> lista de tareas o requisitos pendientes.</li>
+        <li><strong>Sprint:</strong> ciclo de trabajo en Scrum.</li>
+        <li><strong>Daily Scrum:</strong> reunión diaria para sincronizar avances.</li>
+        <li><strong>Kanban Board:</strong> tablero visual de gestión de tareas.</li>
+        <li><strong>User Story (Historia de Usuario):</strong> descripción breve de una necesidad desde el punto de vista del usuario.</li>
+        <li><strong>Artefacto:</strong> objeto usado en Scrum (backlogs, incrementos).</li>
+      </ul>
+    </section>
+
+    <section class="faq card">
+      <h3>5.2 Preguntas Frecuentes (FAQ)</h3>
+
+      <details>
+        <summary>¿Qué diferencia hay entre Scrum y Kanban?</summary>
+        <p>
+          Scrum es una metodología estructurada que define roles, eventos y artefactos específicos.
+          Trabaja en sprints de 1 a 4 semanas, evitando cambios durante el ciclo.
+          Mide el desempeño del equipo mediante la velocidad por sprint.
+        </p>
+        <p>
+          Kanban es flexible, sin roles ni ceremonias obligatorias, y permite flujo continuo.
+          Las tareas se gestionan en un tablero con límites de trabajo en progreso (WIP).
+        </p>
+        <p>
+          Scrum es ideal para planificación y entregables definidos, Kanban para flujo constante.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Cuál metodología es mejor para proyectos pequeños?</summary>
+        <p>
+          Para proyectos pequeños, Kanban suele ser la mejor opción.
+          Es fácil de implementar y no requiere roles ni ceremonias complejas.
+          Permite visualizar el trabajo y adaptarse a cambios rápidamente.
+        </p>
+        <p>
+          Scrum puede funcionar, pero su estructura y eventos pueden ser demasiado pesados.
+          Kanban facilita que equipos pequeños manejen tareas sin burocracia.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Se pueden combinar metodologías ágiles y tradicionales?</summary>
+        <p>
+          Sí, se puede usar un enfoque híbrido conocido como <strong>Water-Scrum-Fall</strong>.
+          Se planifican fases iniciales y requisitos al estilo tradicional (Waterfall).
+          Luego, la ejecución del desarrollo se realiza con metodologías ágiles.
+        </p>
+        <p>
+          Permite adaptarse a cambios mientras se mantiene cierta estructura inicial.
+          Este enfoque es útil en proyectos grandes o complejos con partes predecibles.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Qué herramientas digitales son recomendables?</summary>
+        <ul>
+          <li><strong>Trello:</strong> ideal para Kanban y proyectos pequeños, simple y visual.</li>
+          <li><strong>Jira:</strong> funciona bien para Scrum y equipos grandes de software, con métricas avanzadas.</li>
+          <li><strong>Asana:</strong> flexible, buena para gestión de tareas y equipos medianos.</li>
+          <li><strong>Monday.com:</strong> visual y personalizable, útil para proyectos grandes y complejos.</li>
+        </ul>
+        <p>
+          Trello y Asana son más económicos y fáciles de usar para equipos pequeños,
+          mientras que Jira y Monday.com ofrecen más control y reportes.
+        </p>
+      </details>
+    </section>
   </main>
 
+  <footer class="footer">
+    <p>© 2025 | Recursos de Apoyo | Ingeniería de Software</p>
+  </footer>
 </body>
 </html>

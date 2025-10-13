@@ -1,95 +1,122 @@
+/* =========================
+   Estilos generales
+========================= */
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8fafc;
+  background: #f7fafc;
   color: #222;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* =========================
    Encabezado
 ========================= */
 .header {
-  background: linear-gradient(135deg, #0066cc, #00b4d8);
+  background: linear-gradient(135deg, #023e8a, #00b4d8);
   color: white;
   text-align: center;
-  padding: 40px 20px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  padding: 60px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
-  font-size: 2.2em;
+  font-size: 2.5em;
   margin: 0;
   letter-spacing: 1px;
 }
 
 .header h2 {
   font-weight: 400;
-  margin-top: 10px;
-  font-size: 1.3em;
-  color: #e0f7ff;
-}
-
-/* Encabezado para herramientas (color diferente) */
-.header-tools {
-  background: linear-gradient(135deg, #ff6b6b, #f06595);
+  margin-top: 12px;
+  color: #caf0f8;
 }
 
 /* =========================
-   Contenido principal
+   Contenedor principal
 ========================= */
-main {
-  max-width: 900px;
+.container {
+  max-width: 1000px;
   margin: 50px auto;
-  background: white;
+  padding: 20px;
+}
+
+/* =========================
+   Tarjetas de contenido
+========================= */
+.card {
+  background: #ffffff;
+  margin-bottom: 40px;
   padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Párrafos */
-main p {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #0077b6;
+  border-bottom: 3px solid #00b4d8;
+  display: inline-block;
   margin-bottom: 20px;
-  font-size: 1.05em;
-  text-align: justify;
-}
-
-/* Listas */
-ul {
-  background: #fef3f3;
-  border-left: 4px solid #f06595;
-  padding: 15px 30px;
-  margin-bottom: 25px;
-  border-radius: 8px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-/* Títulos */
-h3 {
-  color: #d6336c;
-  margin-top: 35px;
-  font-size: 1.4em;
-  border-bottom: 2px solid #f8c1d8;
   padding-bottom: 5px;
 }
 
-/* Destacados */
+.card h4 {
+  color: #023e8a;
+  margin-top: 25px;
+}
+
+/* =========================
+   Listas
+========================= */
+ul {
+  background: #f1faff;
+  border-left: 4px solid #00b4d8;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
 strong {
-  color: #a61e4d;
+  color: #023e8a;
 }
 
-/* Enlaces */
-a {
-  color: #d6336c;
-  text-decoration: none;
+/* =========================
+   Footer
+========================= */
+.footer {
+  text-align: center;
+  background: #023e8a;
+  color: #e0f7ff;
+  padding: 25px;
+  font-size: 0.9em;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
 }
 
-a:hover {
-  text-decoration: underline;
+/* =========================
+   Animaciones
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -97,11 +124,14 @@ a:hover {
 ========================= */
 @media (max-width: 768px) {
   .header h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
-  main {
-    margin: 20px;
+  .card {
     padding: 25px;
+  }
+
+  ul {
+    padding: 15px 20px;
   }
 }

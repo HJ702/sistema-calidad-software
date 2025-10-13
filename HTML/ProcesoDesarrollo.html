@@ -1,49 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herramientas de Calidad</title>
-  <link rel="stylesheet" href="../CSS/ProcesoDesarrollo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proceso de Desarrollo de Software</title>
+  <link rel="stylesheet" href="../CSS/ProcesoDesarrollo.css" />
 </head>
 <body>
-
-  <header class="header header-tools">
-    <h1>Herramientas de Calidad en SQA</h1>
-    <h2>Gestión y análisis de software</h2>
+  <header class="header">
+    <h1>Proceso de Desarrollo de Software</h1>
+    <h2>Fases, Modelos y Buenas Prácticas</h2>
   </header>
 
-  <main>
-    <p>Las herramientas de apoyo a la calidad complementan las prácticas de SQA. Según Sommerville (2011), estas permiten mejorar la gestión, el seguimiento y el análisis del software durante su ciclo de vida.</p>
+  <main class="container">
 
-    <p>Se distinguen principalmente tres tipos:</p>
+    <section class="intro card">
+      <h3>Introducción</h3>
+      <p>
+        El proceso de desarrollo de software es el conjunto estructurado de actividades que permiten planificar, diseñar, implementar, probar y mantener un sistema informático. Este proceso busca garantizar la calidad, eficiencia y mantenibilidad del producto final, mediante la aplicación de metodologías, estándares y buenas prácticas de ingeniería de software.
+      </p>
+    </section>
 
-    <ul>
-      <li><strong>Gestión de pruebas:</strong> herramientas que documentan, planifican y controlan la ejecución de pruebas.</li>
-      <li><strong>Seguimiento de defectos:</strong> sistemas que registran errores, asignan responsables y monitorizan el estado de corrección.</li>
-      <li><strong>Análisis de calidad:</strong> herramientas de análisis estático del código y entornos de integración continua que permiten detectar defectos de manera temprana y automatizar la verificación de requisitos de calidad.</li>
-    </ul>
+    <section class="phase card">
+      <h3>1. Análisis de Requisitos</h3>
+      <p>
+        En esta etapa se realiza la captura, análisis y especificación de los requisitos funcionales y no funcionales del sistema. El objetivo es comprender con precisión qué necesita el cliente y qué funciones deberá cumplir el software.
+      </p>
+      <h4>Actividades principales:</h4>
+      <ul>
+        <li>Reunión con el cliente y los usuarios finales.</li>
+        <li>Identificación de requisitos del sistema y del entorno.</li>
+        <li>Elaboración del documento de Especificación de Requisitos de Software (ERS o SRS).</li>
+        <li>Validación de requisitos mediante revisiones y prototipos.</li>
+      </ul>
+      <h4>Resultados:</h4>
+      <ul>
+        <li>Documento de requisitos aprobado.</li>
+        <li>Casos de uso o historias de usuario.</li>
+      </ul>
+    </section>
 
-    <h3>Trello</h3>
-    <ul>
-      <li><strong>Enfoque:</strong> Principalmente utiliza el modelo Kanban, con tableros y tarjetas arrastrables para una gestión visual del flujo de trabajo.</li>
-      <li><strong>Ideal para:</strong> Proyectos personales, colaboración en equipo para tareas simples y gestión intuitiva de tareas.</li>
-      <li><strong>Facilidad de uso:</strong> Interfaz simple y visual, con curva de aprendizaje baja.</li>
-      <li><strong>Funciones:</strong> Tableros, listas, tarjetas, listas de verificación y automatización con Butler.</li>
-    </ul>
+    <section class="phase card">
+      <h3>2. Diseño del Sistema</h3>
+      <p>
+        El diseño traduce los requisitos en una arquitectura de software que defina la estructura del sistema, los componentes y sus interacciones.
+      </p>
+      <h4>Subfases:</h4>
+      <ul>
+        <li><strong>Diseño arquitectónico:</strong> define la estructura general (capas, módulos, patrones).</li>
+        <li><strong>Diseño detallado:</strong> especifica algoritmos, estructuras de datos e interfaces.</li>
+        <li><strong>Diseño de base de datos:</strong> modela la información que el sistema manipulará.</li>
+      </ul>
+      <h4>Principios clave:</h4>
+      <ul>
+        <li>Modularidad.</li>
+        <li>Alta cohesión y bajo acoplamiento.</li>
+        <li>Reutilización de componentes.</li>
+        <li>Documentación con diagramas UML (casos de uso, clases, secuencia, componentes, etc.).</li>
+      </ul>
+    </section>
 
-    <h3>Jira</h3>
-    <ul>
-      <li><strong>Enfoque:</strong> Herramienta completa para equipos de desarrollo que siguen metodologías ágiles (Scrum, Kanban y Scrumban).</li>
-      <li><strong>Ideal para:</strong> Proyectos complejos, seguimiento detallado de incidencias y planificación de sprints.</li>
-      <li><strong>Funciones:</strong> Planificación de sprints, seguimiento de errores, informes detallados, personalización avanzada y muchas integraciones.</li>
-      <li><strong>Complejidad:</strong> Es potente pero más compleja, con curva de aprendizaje mayor debido a la cantidad de funciones.</li>
-    </ul>
+    <section class="phase card">
+      <h3>3. Implementación o Codificación</h3>
+      <p>
+        Consiste en la traducción del diseño a código fuente mediante lenguajes de programación apropiados (Java, Python, C#, etc.). Durante esta fase se aplican prácticas de ingeniería como la programación estructurada, orientada a objetos o basada en componentes.
+      </p>
+      <h4>Buenas prácticas:</h4>
+      <ul>
+        <li>Uso de control de versiones (Git).</li>
+        <li>Revisión de código (code review).</li>
+        <li>Pruebas unitarias automatizadas.</li>
+        <li>Documentación técnica del código.</li>
+      </ul>
+    </section>
 
-    <p><strong>¿Cuál elegir?</strong>  
-    Elige <strong>Trello</strong> si necesitas una herramienta rápida y visual para tareas simples o proyectos personales.  
-    Elige <strong>Jira</strong> si tu equipo es de desarrollo de software, trabajas con metodologías ágiles complejas y necesitas rastrear incidencias en profundidad y generar informes detallados.</p>
+    <section class="phase card">
+      <h3>4. Pruebas (Testing)</h3>
+      <p>
+        El objetivo es verificar y validar el funcionamiento del software para asegurar que cumple los requisitos establecidos y está libre de defectos.
+      </p>
+      <h4>Tipos de pruebas:</h4>
+      <ul>
+        <li><strong>Unitarias:</strong> verifican funciones individuales.</li>
+        <li><strong>De integración:</strong> evalúan la interacción entre módulos.</li>
+        <li><strong>De sistema:</strong> comprueban el comportamiento completo.</li>
+        <li><strong>De aceptación:</strong> realizadas por el cliente antes de la entrega final.</li>
+      </ul>
+      <p>
+        Se emplean marcos de trabajo como <strong>JUnit</strong>, <strong>Selenium</strong> o <strong>Postman</strong>, según el tipo de prueba.
+      </p>
+    </section>
+
+    <section class="phase card">
+      <h3>5. Implementación o Despliegue</h3>
+      <p>
+        Implica la instalación y configuración del software en el entorno operativo real. Puede incluir migración de datos, configuración de servidores y capacitación a usuarios.
+      </p>
+      <h4>Estrategias comunes:</h4>
+      <ul>
+        <li>Despliegue gradual o por fases.</li>
+        <li>Despliegue continuo (CI/CD).</li>
+        <li>Contenerización con Docker o Kubernetes.</li>
+      </ul>
+    </section>
+
+    <section class="phase card">
+      <h3>6. Mantenimiento</h3>
+      <p>
+        Es la fase más prolongada del ciclo de vida del software. Incluye la corrección de errores, mejoras funcionales y actualizaciones tecnológicas necesarias para garantizar la vigencia y adaptabilidad del sistema.
+      </p>
+      <h4>Tipos de mantenimiento:</h4>
+      <ul>
+        <li><strong>Correctivo:</strong> reparación de defectos detectados.</li>
+        <li><strong>Adaptativo:</strong> adecuación a nuevos entornos o plataformas.</li>
+        <li><strong>Perfectivo:</strong> mejora del rendimiento o funcionalidad.</li>
+        <li><strong>Preventivo:</strong> optimización del código para evitar futuros problemas.</li>
+      </ul>
+    </section>
+
+    <section class="models card">
+      <h3>Modelos de Proceso de Desarrollo</h3>
+      <ul>
+        <li><strong>Modelo en Cascada:</strong> secuencial y rígido, adecuado para proyectos con requisitos bien definidos.</li>
+        <li><strong>Modelo Incremental:</strong> el sistema se construye por versiones sucesivas y funcionales.</li>
+        <li><strong>Modelo en Espiral:</strong> incorpora análisis de riesgos y desarrollo iterativo.</li>
+        <li><strong>Modelo Ágil (Scrum, Kanban, XP):</strong> basado en iteraciones cortas, retroalimentación continua y adaptación al cambio.</li>
+        <li><strong>Modelo DevOps:</strong> integra desarrollo y operaciones para lograr despliegue y entrega continua.</li>
+      </ul>
+    </section>
+
   </main>
 
+  <footer class="footer">
+    <p>© 2025 | Proceso de Desarrollo de Software | Ingeniería de Software</p>
+  </footer>
 </body>
 </html>
