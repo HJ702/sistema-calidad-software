@@ -1,23 +1,164 @@
-<!-- Plantilla base actualizada con nuevo CSS -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de ejemplo</title>
+  <title>Comparador y Encuesta de Metodologías</title>
   <link rel="stylesheet" href="../CSS/FuncionalidadJS.css">
 </head>
 <body>
 
   <header class="header">
-    <h1>Sistema de gestión de calidad de software</h1>
-    <h2>Adicionales</h2>
+    <h1>Funcionalidad adicional JavaScript</h1>
+    <h2>Herramientas Interactivas de Metodologías</h2>
+    <h2>Comparador y Encuesta de Preferencias</h2>
   </header>
 
-  <main>
-    <p>IIIIIIIIIIIIIIIIIIIIIIIIII
-    </p>
-  </main>
+  <div class="container">
+
+    <!-- =============================
+         Información introductoria
+    ============================== -->
+    <div class="card">
+      <h3>Introducción a las Metodologías</h3>
+      <ul>
+        <li><strong>Cascada:</strong> Es un enfoque tradicional y secuencial en el que cada fase del proyecto debe completarse antes de pasar a la siguiente. Ideal cuando los requisitos son claros y estables, y se necesita documentación detallada para seguimiento y control. Es más rígida ante cambios y se centra en la planificación exhaustiva.</li>
+        
+        <li><strong>Scrum:</strong> Metodología ágil que organiza el trabajo en iteraciones cortas llamadas sprints. Promueve flexibilidad, adaptabilidad y la participación activa del cliente. Permite revisiones frecuentes, priorización de tareas y entrega continua de valor. Es ideal para proyectos donde los requisitos pueden cambiar y se busca innovación constante.</li>
+        
+        <li><strong>Kanban:</strong> Método ágil basado en la visualización de tareas mediante tableros, priorizando la eficiencia y el flujo continuo. Ayuda a identificar cuellos de botella y mejorar procesos. Es excelente para equipos que necesitan adaptarse rápidamente a cambios, gestionar prioridades de forma flexible y optimizar recursos sin mucha planificación previa.</li>
+        
+        <li><strong>XP (Extreme Programming):</strong> Metodología ágil enfocada en la calidad del software, con prácticas como programación en pareja, pruebas frecuentes y retroalimentación constante del cliente. Favorece la comunicación, la mejora continua y la entrega iterativa de funcionalidades. Ideal para proyectos donde la calidad del código y la adaptabilidad son críticas.</li>
+        
+        <li><strong>Lean:</strong> Enfoque centrado en maximizar valor y minimizar desperdicio. Promueve la eficiencia, la mejora continua y la optimización de procesos. Se adapta a proyectos donde es necesario entregar rápido, optimizar recursos y garantizar que cada actividad agregue valor. Es flexible, orientada a resultados y favorece la innovación constante.</li>
+      </ul>
+    </div>
+
+    <!-- =============================
+         US-18: Comparador de Metodologías
+    ============================== -->
+    <div class="card">
+      <h3>Comparador de Metodologías</h3>
+      <p>Seleccioná dos o más metodologías para comparar sus principales características:</p>
+
+      <div>
+        <label><input type="checkbox" value="Cascada"> Cascada</label><br>
+        <label><input type="checkbox" value="Scrum"> Scrum</label><br>
+        <label><input type="checkbox" value="Kanban"> Kanban</label><br>
+        <label><input type="checkbox" value="XP"> XP (Extreme Programming)</label><br>
+        <label><input type="checkbox" value="Lean"> Lean</label>
+      </div>
+
+      <button id="compareBtn">Comparar</button>
+
+      <div id="comparisonResult" class="result-box"></div>
+    </div>
+
+    <!-- =============================
+         US-19: Encuesta de Preferencias
+    ============================== -->
+    <div class="card">
+      <h3>Encuesta de Preferencias Metodológicas</h3>
+      <p>Respondé las siguientes preguntas para descubrir qué metodología se adapta mejor a tu proyecto:</p>
+
+      <form id="surveyForm">
+        <label>1. ¿Tu proyecto requiere mucha documentación formal?</label><br>
+        <select name="documentacion">
+          <option value="alta">Sí, mucha</option>
+          <option value="media">Moderada</option>
+          <option value="baja">Poca</option>
+        </select><br><br>
+
+        <label>2. ¿El cliente necesita participar constantemente?</label><br>
+        <select name="cliente">
+          <option value="alta">Sí, de forma continua</option>
+          <option value="media">Solo en revisiones</option>
+          <option value="baja">Rara vez</option>
+        </select><br><br>
+
+        <label>3. ¿Los requisitos cambian con frecuencia?</label><br>
+        <select name="cambios">
+          <option value="alta">Sí, muy a menudo</option>
+          <option value="media">A veces</option>
+          <option value="baja">Casi nunca</option>
+        </select><br><br>
+
+        <label>4. ¿Buscás entregas rápidas o en etapas planificadas?</label><br>
+        <select name="entrega">
+          <option value="rapida">Rápidas y frecuentes</option>
+          <option value="planificada">Planificadas por fases</option>
+        </select><br><br>
+
+        <button type="button" id="surveyBtn">Obtener recomendación</button>
+      </form>
+
+      <div id="surveyResult" class="result-box"></div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    © 2025 - Comparador de Metodologías | Desarrollado por Lucas
+  </footer>
+
+  <!-- =============================
+       JavaScript Funcional
+  ============================== -->
+  <script>
+    const metodologias = {
+      "Cascada": { tipo: "Tradicional", flexibilidad: "Baja", entrega: "Por fases", documentacion: "Extensa", cliente: "Baja" },
+      "Scrum": { tipo: "Ágil", flexibilidad: "Alta", entrega: "Iterativa", documentacion: "Moderada", cliente: "Alta" },
+      "Kanban": { tipo: "Ágil", flexibilidad: "Alta", entrega: "Continua", documentacion: "Ligera", cliente: "Media" },
+      "XP": { tipo: "Ágil", flexibilidad: "Alta", entrega: "Iterativa", documentacion: "Ligera", cliente: "Alta" },
+      "Lean": { tipo: "Ágil", flexibilidad: "Media", entrega: "Continua", documentacion: "Moderada", cliente: "Media" }
+    };
+
+    // Comparador
+    document.getElementById("compareBtn").addEventListener("click", () => {
+      const seleccionadas = Array.from(document.querySelectorAll("input[type=checkbox]:checked")).map(cb => cb.value);
+      const resultDiv = document.getElementById("comparisonResult");
+
+      if (seleccionadas.length < 2) {
+        resultDiv.innerHTML = "<strong>Por favor seleccioná al menos dos metodologías para comparar.</strong>";
+        return;
+      }
+
+      let tabla = `<table border="1" cellpadding="10" style="border-collapse: collapse; width:100%;">
+        <tr><th>Característica</th>${seleccionadas.map(m => `<th>${m}</th>`).join('')}</tr>
+        <tr><td>Tipo</td>${seleccionadas.map(m => `<td>${metodologias[m].tipo}</td>`).join('')}</tr>
+        <tr><td>Flexibilidad</td>${seleccionadas.map(m => `<td>${metodologias[m].flexibilidad}</td>`).join('')}</tr>
+        <tr><td>Entrega</td>${seleccionadas.map(m => `<td>${metodologias[m].entrega}</td>`).join('')}</tr>
+        <tr><td>Documentación</td>${seleccionadas.map(m => `<td>${metodologias[m].documentacion}</td>`).join('')}</tr>
+        <tr><td>Participación del cliente</td>${seleccionadas.map(m => `<td>${metodologias[m].cliente}</td>`).join('')}</tr>
+      </table>`;
+      resultDiv.innerHTML = tabla;
+    });
+
+    // Encuesta
+    document.getElementById("surveyBtn").addEventListener("click", () => {
+      const form = document.getElementById("surveyForm");
+      const respuestas = {
+        documentacion: form.documentacion.value,
+        cliente: form.cliente.value,
+        cambios: form.cambios.value,
+        entrega: form.entrega.value
+      };
+
+      let recomendacion = "";
+
+      if (respuestas.documentacion === "alta" && respuestas.cambios === "baja") {
+        recomendacion = "Metodología recomendada: <strong>Cascada</strong>. Ideal cuando los requisitos son estables y se necesita documentación formal.";
+      } else if (respuestas.entrega === "rapida" && respuestas.cambios !== "baja") {
+        recomendacion = "Metodología recomendada: <strong>Scrum</strong>. Perfecta para equipos que buscan flexibilidad y entregas rápidas.";
+      } else if (respuestas.cambios === "alta" && respuestas.cliente === "media") {
+        recomendacion = "Metodología recomendada: <strong>Kanban</strong>. Ideal para flujos continuos de trabajo y mejora constante.";
+      } else {
+        recomendacion = "Metodología recomendada: <strong>Lean</strong> o <strong>XP</strong>. Adaptables y enfocadas en la eficiencia.";
+      }
+
+      document.getElementById("surveyResult").innerHTML = recomendacion;
+    });
+  </script>
 
 </body>
 </html>
