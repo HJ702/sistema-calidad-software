@@ -5,9 +5,100 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Galería — Temas</title>
   <link rel="stylesheet" href="../CSS/PaginaPrincipal.css">
+
+  <style>
+    /* ===== MENÚ HAMBURGUESA ===== */
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+
+    /* ===== MENÚ DESPLEGABLE ===== */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #222;
+      color: white;
+      transition: left 0.4s ease;
+      padding-top: 60px;
+      z-index: 999;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      border-bottom: 1px solid #444;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #444;
+    }
+
+    .menu.open {
+      left: 0;
+    }
+
+    /* ===== EFECTO BOTÓN ACTIVADO ===== */
+    .menu-toggle.active div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Ajustes para que no tape el contenido */
+    header {
+      margin-top: 80px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
   <div class="page">
+    <!-- BOTÓN DE MENÚ HAMBURGUESA -->
+    <button class="menu-toggle" id="menuToggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- MENÚ DESPLEGABLE -->
+    <nav class="menu" id="menu">
+      <a href="GestionCalidad.html">Gestión De Calidad De Software</a>
+      <a href="ProcesoDesarrollo.html">Proceso De Desarrollo De Software</a>
+      <a href="Metodologias.html">Metodologías En Detalle</a>
+      <a href="Recursos.html">Recursos y Aprendizaje</a>
+      <a href="Adicionales.html">Adicionales</a>
+      <a href="FuncionalidadJS.html">Funcionalidad Adicional JavaScript</a>
+    </nav>
+
     <header>
       <h1>Sistema De Calidad De Software</h1>
       <p>El sistema de calidad de software es un conjunto de procesos, normas y actividades diseñadas para garantizar que un producto de software cumpla con los requisitos esperados. Busca prevenir errores, mejorar el desarrollo y asegurar la satisfacción del usuario. Incluye pruebas, revisiones y evaluaciones continuas. Su objetivo es lograr un software confiable, eficiente y de alta calidad.</p>
@@ -15,20 +106,18 @@
 
     <main class="grid">
       <a class="card" href="GestionCalidad.html">
-        <span class="title">Gestion De Calidad De Software</span>
-        <div class="desc">La Gestión de Calidad de Software
-Trata sobre los procesos y técnicas utilizadas para garantizar que el software cumpla con los estándares de calidad. Incluye control de errores, pruebas, revisiones y mejora continua del producto.</div>
+        <span class="title">Gestión De Calidad De Software</span>
+        <div class="desc">La Gestión de Calidad de Software trata sobre los procesos y técnicas utilizadas para garantizar que el software cumpla con los estándares de calidad. Incluye control de errores, pruebas, revisiones y mejora continua del producto.</div>
       </a>
 
       <a class="card" href="ProcesoDesarrollo.html">
         <span class="title">Proceso De Desarrollo De Software</span>
-        <div class="desc">El Proceso de Desarrollo de Software Describe las etapas que se siguen para crear un software, desde la planificación y análisis de requisitos hasta el diseño, codificación, pruebas y mantenimiento.</div>
+        <div class="desc">Describe las etapas que se siguen para crear un software, desde la planificación y análisis de requisitos hasta el diseño, codificación, pruebas y mantenimiento.</div>
       </a>
 
       <a class="card" href="Metodologias.html">
-        <span class="title">Metodologias En Detalle</span>
-        <div class="desc">Las Metodologías en Detalle
-Explica las diferentes metodologías de trabajo que se usan para desarrollar software (por ejemplo, metodologías ágiles como Scrum o Kanban, y tradicionales como Cascada o V-Model).</div>
+        <span class="title">Metodologías En Detalle</span>
+        <div class="desc">Explica las diferentes metodologías de trabajo que se usan para desarrollar software (por ejemplo, metodologías ágiles como Scrum o Kanban, y tradicionales como Cascada o V-Model).</div>
       </a>
 
       <a class="card" href="Recursos.html">
@@ -38,7 +127,7 @@ Explica las diferentes metodologías de trabajo que se usan para desarrollar sof
 
       <a class="card" href="Adicionales.html">
         <span class="title">Adicionales</span>
-        <div class="desc">En esta sección compartimos información extra sobre nuestro equipo, nuestra forma de trabajo, valores, curiosidades y detalles que nos definen más allá de los proyectos. Es un espacio para conocernos mejor y entender qué nos motiva como desarrolladores independientes.</div>
+        <div class="desc">Información extra sobre el equipo, la forma de trabajo, valores y curiosidades.</div>
       </a>
 
       <a class="card" href="FuncionalidadJS.html">
@@ -47,5 +136,15 @@ Explica las diferentes metodologías de trabajo que se usan para desarrollar sof
       </a>
     </main>
   </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
