@@ -1,85 +1,118 @@
-/* =========================
-   Sección Metodologías en Detalle
-========================= */
-.methods h3 {
-  color: #0077b6;
-  border-bottom: 3px solid #00b4d8;
-  display: inline-block;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-.methods h4 {
-  color: #023e8a;
-  margin-top: 30px;
+/* Encabezado */
+.header {
+  background-color: #1f3b73;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.methods h5 {
-  color: #0077b6;
-  margin-top: 20px;
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-.methods p {
-  margin-bottom: 15px;
+.header h2 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  color: #dbe4ff;
 }
 
-.subsection {
-  margin-top: 40px;
+/* Contenedor */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Títulos */
+h3 {
+  color: #1f3b73;
+  border-bottom: 2px solid #d0d8f2;
+  padding-bottom: 0.4rem;
+}
+
+h4 {
+  color: #34518a;
+  margin-top: 1rem;
+}
+
+ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
 }
 
 /* Tabla comparativa */
-.compare-table {
+table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 25px;
-  background: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  overflow: hidden;
+  margin-top: 1rem;
 }
 
-.compare-table th {
-  background: #00b4d8;
-  color: #fff;
+th, td {
+  border: 1px solid #cdd4e0;
+  padding: 0.6rem;
   text-align: left;
-  padding: 12px;
-  font-weight: 600;
 }
 
-.compare-table td {
-  border-bottom: 1px solid #eaeaea;
-  padding: 12px;
-  vertical-align: top;
+th {
+  background-color: #1f3b73;
+  color: white;
 }
 
-.compare-table tr:hover {
-  background: #f1faff;
-  transition: background 0.3s ease;
+tr:nth-child(even) {
+  background-color: #f2f4f8;
 }
 
-/* Responsividad para la tabla */
+/* Footer */
+.footer {
+  background-color: #1f3b73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-  .compare-table thead {
-    display: none;
+  .container {
+    padding: 0 0.5rem;
   }
 
-  .compare-table tr {
-    display: block;
-    margin-bottom: 15px;
-    border: 1px solid #eaeaea;
-    border-radius: 8px;
-    padding: 10px;
+  .header h1 {
+    font-size: 1.6rem;
   }
 
-  .compare-table td {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 5px;
+  .header h2 {
+    font-size: 1rem;
   }
 
-  .compare-table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    color: #023e8a;
+  table {
+    font-size: 0.9rem;
   }
 }

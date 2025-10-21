@@ -3,257 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proceso de Desarrollo de Software</title>
-  <link rel="stylesheet" href="../CSS/ProcesoDesarrollo.css" />
+  <title>Metodologías en Detalle - Desarrollo de Software</title>
+  <link rel="stylesheet" href="../CSS/Metodologias.css" />
 </head>
 <body>
   <header class="header">
-    <h1>Proceso de Desarrollo de Software</h1>
-    <h2>Fases, Modelos y Metodologías Ágiles</h2>
+    <h1>Metodologías en Detalle</h1>
+    <h2>Scrum y Kanban en el desarrollo de software moderno</h2>
   </header>
 
   <main class="container">
-
-    <!-- Introducción -->
     <section class="intro card">
-      <h3>Introducción</h3>
       <p>
-        El proceso de desarrollo de software es el conjunto estructurado de actividades que permiten planificar, diseñar, implementar, probar y mantener un sistema informático. Este proceso busca garantizar la calidad, eficiencia y mantenibilidad del producto final, mediante la aplicación de metodologías, estándares y buenas prácticas de ingeniería de software.
+        En esta sección se describen en profundidad las metodologías ágiles <strong>Scrum</strong> y <strong>Kanban</strong>, ampliamente utilizadas en el desarrollo de software moderno. Ambas promueven la adaptabilidad, la mejora continua y la entrega incremental de valor al cliente, aunque difieren en su enfoque de planificación y control del flujo de trabajo.
       </p>
     </section>
 
-    <!-- 1. Análisis de Requisitos -->
-    <section class="phase card">
-      <h3>1. Análisis de Requisitos</h3>
+    <section class="scrum card">
+      <h3>Metodología Scrum</h3>
       <p>
-        En esta etapa se realiza la captura, análisis y especificación de los requisitos funcionales y no funcionales del sistema.
-        El objetivo es comprender con precisión qué necesita el cliente y qué funciones deberá cumplir el software.
+        Scrum es un marco de trabajo ágil diseñado para gestionar proyectos complejos de desarrollo de software mediante iteraciones cortas llamadas <strong>sprints</strong>. Su objetivo principal es entregar versiones funcionales del producto en ciclos breves, priorizando la comunicación constante, la retroalimentación y la adaptación continua.
       </p>
 
-      <h4>Actividades principales:</h4>
+      <h4>Estructura y Roles en Scrum</h4>
       <ul>
-        <li>Reunión con el cliente y los usuarios finales.</li>
-        <li>Identificación de requisitos del sistema y del entorno.</li>
-        <li>Elaboración del documento de Especificación de Requisitos de Software (ERS o SRS).</li>
-        <li>Validación de requisitos mediante revisiones y prototipos.</li>
+        <li><strong>Product Owner (Propietario del Producto):</strong> define y prioriza los requisitos del producto en el Product Backlog.</li>
+        <li><strong>Scrum Master:</strong> actúa como facilitador, elimina impedimentos y promueve la mejora continua.</li>
+        <li><strong>Development Team:</strong> equipo multidisciplinario que diseña, desarrolla y entrega el incremento del producto.</li>
       </ul>
 
-      <h4>Resultados:</h4>
+      <h4>Artefactos Principales</h4>
       <ul>
-        <li>Documento de requisitos aprobado.</li>
-        <li>Casos de uso o historias de usuario.</li>
+        <li><strong>Product Backlog:</strong> lista priorizada de requisitos.</li>
+        <li><strong>Sprint Backlog:</strong> tareas seleccionadas para el sprint.</li>
+        <li><strong>Incremento del Producto:</strong> versión funcional y entregable al final de cada sprint.</li>
+      </ul>
+
+      <h4>Eventos Clave</h4>
+      <ul>
+        <li><strong>Sprint Planning:</strong> planificación de tareas del sprint.</li>
+        <li><strong>Daily Scrum:</strong> reunión diaria de sincronización (máx. 15 min).</li>
+        <li><strong>Sprint Review:</strong> revisión del incremento con el Product Owner.</li>
+        <li><strong>Sprint Retrospective:</strong> análisis del proceso y mejoras.</li>
+      </ul>
+
+      <h4>Ventajas Técnicas de Scrum</h4>
+      <ul>
+        <li>Alta capacidad de respuesta ante cambios.</li>
+        <li>Entrega temprana de valor.</li>
+        <li>Trazabilidad mediante historias de usuario y tableros.</li>
+        <li>Colaboración entre roles técnicos y de negocio.</li>
+        <li>Ideal para proyectos con requisitos cambiantes.</li>
       </ul>
     </section>
 
-    <!-- 2. Diseño del Sistema -->
-    <section class="phase card">
-      <h3>2. Diseño del Sistema</h3>
+    <section class="kanban card">
+      <h3>Metodología Kanban</h3>
       <p>
-        El diseño traduce los requisitos en una arquitectura de software que defina la estructura del sistema, los componentes y sus interacciones.
+        Kanban es un método ágil visual para la gestión del flujo de trabajo que busca mejorar la eficiencia y reducir los tiempos de entrega. Se basa en principios de <strong>lean manufacturing</strong> aplicados al desarrollo de software, para eliminar desperdicios y optimizar la capacidad del equipo.
       </p>
 
-      <h4>Subfases:</h4>
+      <h4>Principios Fundamentales</h4>
       <ul>
-        <li><strong>Diseño arquitectónico:</strong> define la estructura general (capas, módulos, patrones).</li>
-        <li><strong>Diseño detallado:</strong> especifica algoritmos, estructuras de datos e interfaces.</li>
-        <li><strong>Diseño de base de datos:</strong> modela la información que el sistema manipulará.</li>
+        <li><strong>Visualizar el flujo de trabajo:</strong> mediante un tablero dividido en columnas (Por hacer, En progreso, Hecho).</li>
+        <li><strong>Limitar el trabajo en curso (WIP):</strong> evita la sobrecarga y mejora la concentración.</li>
+        <li><strong>Medir y gestionar el flujo:</strong> métricas como lead time y cycle time.</li>
+        <li><strong>Hacer explícitas las políticas de trabajo:</strong> reglas y criterios de avance visibles.</li>
+        <li><strong>Implementar bucles de retroalimentación:</strong> revisiones y mejoras continuas.</li>
       </ul>
 
-      <h4>Principales principios:</h4>
+      <h4>Componentes Técnicos del Tablero Kanban</h4>
       <ul>
-        <li>Modularidad.</li>
-        <li>Alta cohesión y bajo acoplamiento.</li>
-        <li>Reutilización de componentes.</li>
-        <li>Documentación con diagramas UML (casos de uso, clases, secuencia, componentes, etc.).</li>
+        <li><strong>Columnas:</strong> representan etapas del proceso (diseño, desarrollo, pruebas, despliegue).</li>
+        <li><strong>Tarjetas:</strong> contienen tareas o historias de usuario.</li>
+        <li><strong>Límites WIP:</strong> número máximo de tareas por columna.</li>
+        <li><strong>Indicadores de rendimiento:</strong> gráficos y métricas de eficiencia.</li>
       </ul>
-    </section>
 
-    <!-- 3. Implementación -->
-    <section class="phase card">
-      <h3>3. Implementación o Codificación</h3>
-      <p>
-        Consiste en la traducción del diseño a código fuente mediante lenguajes de programación apropiados (Java, Python, C#, etc.).
-        Durante esta fase se aplican prácticas de ingeniería como la programación estructurada, orientada a objetos o basada en componentes.
-      </p>
-
-      <h4>Buenas prácticas:</h4>
+      <h4>Ventajas Técnicas de Kanban</h4>
       <ul>
-        <li>Uso de control de versiones (Git).</li>
-        <li>Revisión de código (code review).</li>
-        <li>Pruebas unitarias automatizadas.</li>
-        <li>Documentación técnica del código.</li>
+        <li>Entrega continua sin ciclos fijos.</li>
+        <li>Visualización clara del estado del proyecto.</li>
+        <li>Detección temprana de cuellos de botella.</li>
+        <li>Optimización del flujo de trabajo.</li>
+        <li>Ideal para mantenimiento o desarrollo continuo.</li>
       </ul>
     </section>
 
-    <!-- 4. Pruebas -->
-    <section class="phase card">
-      <h3>4. Pruebas (Testing)</h3>
-      <p>
-        El objetivo es verificar y validar el funcionamiento del software para asegurar que cumple los requisitos establecidos y está libre de defectos.
-      </p>
-
-      <h4>Tipos de pruebas:</h4>
-      <ul>
-        <li><strong>Unitarias:</strong> verifican funciones individuales.</li>
-        <li><strong>De integración:</strong> evalúan la interacción entre módulos.</li>
-        <li><strong>De sistema:</strong> comprueban el comportamiento completo.</li>
-        <li><strong>De aceptación:</strong> realizadas por el cliente antes de la entrega final.</li>
-      </ul>
-
-      <p>
-        Se emplean marcos de trabajo como <strong>JUnit</strong>, <strong>Selenium</strong> o <strong>Postman</strong>, según el tipo de prueba.
-      </p>
+    <section class="comparison card">
+      <h3>Comparación Técnica entre Scrum y Kanban</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Aspecto</th>
+            <th>Scrum</th>
+            <th>Kanban</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Estructura</td>
+            <td>Basado en sprints (iteraciones fijas).</td>
+            <td>Flujo continuo de trabajo.</td>
+          </tr>
+          <tr>
+            <td>Roles definidos</td>
+            <td>Product Owner, Scrum Master, Equipo.</td>
+            <td>No establece roles específicos.</td>
+          </tr>
+          <tr>
+            <td>Planificación</td>
+            <td>Al inicio de cada sprint.</td>
+            <td>Flexible y continua.</td>
+          </tr>
+          <tr>
+            <td>Límites de trabajo</td>
+            <td>Determinados por la capacidad del sprint.</td>
+            <td>Definidos por límites WIP.</td>
+          </tr>
+          <tr>
+            <td>Medición de progreso</td>
+            <td>Burn-down chart (trabajo restante).</td>
+            <td>Lead time y throughput.</td>
+          </tr>
+          <tr>
+            <td>Tipo de proyectos</td>
+            <td>Nuevos desarrollos o iterativos.</td>
+            <td>Mantenimiento o mejora continua.</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-
-    <!-- 5. Despliegue -->
-    <section class="phase card">
-      <h3>5. Implementación o Despliegue</h3>
-      <p>
-        Implica la instalación y configuración del software en el entorno operativo real.
-        Puede incluir migración de datos, configuración de servidores y capacitación a usuarios.
-      </p>
-
-      <h4>Estrategias comunes:</h4>
-      <ul>
-        <li>Despliegue gradual o por fases.</li>
-        <li>Despliegue continuo (CI/CD).</li>
-        <li>Contenerización con Docker o Kubernetes.</li>
-      </ul>
-    </section>
-
-    <!-- 6. Mantenimiento -->
-    <section class="phase card">
-      <h3>6. Mantenimiento</h3>
-      <p>
-        Es la fase más prolongada del ciclo de vida del software.
-        Incluye la corrección de errores, mejoras funcionales y actualizaciones tecnológicas necesarias para garantizar la vigencia y adaptabilidad del sistema.
-      </p>
-
-      <h4>Tipos de mantenimiento:</h4>
-      <ul>
-        <li><strong>Correctivo:</strong> reparación de defectos detectados.</li>
-        <li><strong>Adaptativo:</strong> adecuación a nuevos entornos o plataformas.</li>
-        <li><strong>Perfectivo:</strong> mejora del rendimiento o funcionalidad.</li>
-        <li><strong>Preventivo:</strong> optimización del código para evitar futuros problemas.</li>
-      </ul>
-    </section>
-
-    <!-- Modelos de proceso -->
-    <section class="models card">
-      <h3>Modelos de Proceso de Desarrollo</h3>
-      <ul>
-        <li><strong>Modelo en Cascada:</strong> secuencial y rígido, adecuado para proyectos con requisitos bien definidos.</li>
-        <li><strong>Modelo Incremental:</strong> el sistema se construye por versiones sucesivas y funcionales.</li>
-        <li><strong>Modelo en Espiral:</strong> incorpora análisis de riesgos y desarrollo iterativo.</li>
-        <li><strong>Modelo Ágil (Scrum, Kanban, XP):</strong> basado en iteraciones cortas, retroalimentación continua y adaptación al cambio.</li>
-        <li><strong>Modelo DevOps:</strong> integra desarrollo y operaciones para lograr despliegue y entrega continua.</li>
-      </ul>
-    </section>
-
-    <!-- NUEVA SECCIÓN -->
-    <section class="methods card">
-      <h3>4. Metodologías en Detalle</h3>
-      <p>
-        En esta sección se describen en profundidad las metodologías ágiles <strong>Scrum</strong> y <strong>Kanban</strong>, ampliamente utilizadas en el desarrollo de software moderno.
-        Ambas promueven la adaptabilidad, la mejora continua y la entrega incremental de valor al cliente.
-      </p>
-
-      <div class="subsection">
-        <h4>4.1 Metodología Scrum</h4>
-        <p>
-          Scrum es un marco de trabajo ágil basado en iteraciones cortas llamadas <strong>sprints</strong>.
-          Su propósito es entregar versiones funcionales del producto en ciclos breves, fomentando la comunicación y adaptación constante.
-        </p>
-
-        <h5>Estructura y Roles</h5>
-        <ul>
-          <li><strong>Product Owner:</strong> Define y prioriza requisitos en el Product Backlog.</li>
-          <li><strong>Scrum Master:</strong> Facilita el proceso y elimina impedimentos.</li>
-          <li><strong>Development Team:</strong> Diseña, desarrolla y entrega incrementos funcionales.</li>
-        </ul>
-
-        <h5>Artefactos Principales</h5>
-        <ul>
-          <li><strong>Product Backlog:</strong> Lista priorizada de requisitos e historias.</li>
-          <li><strong>Sprint Backlog:</strong> Subconjunto del backlog para el sprint actual.</li>
-          <li><strong>Incremento:</strong> Versión funcional entregable al final del sprint.</li>
-        </ul>
-
-        <h5>Eventos Clave</h5>
-        <ul>
-          <li><strong>Sprint Planning:</strong> Definición de historias a desarrollar.</li>
-          <li><strong>Daily Scrum:</strong> Reunión diaria de seguimiento.</li>
-          <li><strong>Sprint Review:</strong> Presentación del incremento.</li>
-          <li><strong>Sprint Retrospective:</strong> Análisis de mejora continua.</li>
-        </ul>
-
-        <h5>Ventajas Técnicas</h5>
-        <ul>
-          <li>Alta respuesta a cambios.</li>
-          <li>Entrega temprana e incremental.</li>
-          <li>Colaboración y trazabilidad efectiva.</li>
-          <li>Ideal para entornos dinámicos.</li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h4>4.2 Metodología Kanban</h4>
-        <p>
-          Kanban es un método ágil visual para gestionar el flujo de trabajo, enfocado en mejorar la eficiencia y reducir los tiempos de entrega.
-        </p>
-
-        <h5>Principios Fundamentales</h5>
-        <ul>
-          <li><strong>Visualizar el flujo:</strong> Tablero con columnas (Por hacer, En progreso, Hecho).</li>
-          <li><strong>Limitar trabajo en curso (WIP):</strong> Evita la sobrecarga.</li>
-          <li><strong>Medir el flujo:</strong> Analiza métricas como lead time y cycle time.</li>
-          <li><strong>Políticas explícitas:</strong> Reglas visibles para todos.</li>
-          <li><strong>Retroalimentación continua:</strong> Revisión y mejora constante.</li>
-        </ul>
-
-        <h5>Componentes Técnicos</h5>
-        <ul>
-          <li><strong>Columnas:</strong> Etapas del proceso.</li>
-          <li><strong>Tarjetas:</strong> Tareas con responsable y estado.</li>
-          <li><strong>Límites WIP:</strong> Número máximo de tareas activas.</li>
-          <li><strong>Indicadores:</strong> Métricas y gráficos de flujo acumulado.</li>
-        </ul>
-
-        <h5>Ventajas Técnicas</h5>
-        <ul>
-          <li>Entrega continua sin sprints.</li>
-          <li>Visualización clara del progreso.</li>
-          <li>Optimización del flujo de trabajo.</li>
-          <li>Ideal para mantenimiento y soporte.</li>
-        </ul>
-      </div>
-
-      <div class="comparison">
-        <h4>Comparación Técnica entre Scrum y Kanban</h4>
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Aspecto</th>
-              <th>Scrum</th>
-              <th>Kanban</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Estructura</td><td>Sprints fijos.</td><td>Flujo continuo.</td></tr>
-            <tr><td>Roles definidos</td><td>Product Owner, Scrum Master, Equipo.</td><td>No especifica roles.</td></tr>
-            <tr><td>Planificación</td><td>Al inicio de cada sprint.</td><td>Flexible y continua.</td></tr>
-            <tr><td>Límites de trabajo</td><td>Según capacidad del sprint.</td><td>Según límites WIP.</td></tr>
-            <tr><td>Medición de progreso</td><td>Burn-down chart.</td><td>Lead time y throughput.</td></tr>
-            <tr><td>Tipo de proyectos</td><td>Nuevos desarrollos.</td><td>Mantenimiento o mejora continua.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
   </main>
 
   <footer class="footer">
-    <p>© 2025 | Proceso de Desarrollo de Software | Ingeniería de Software</p>
+    <p>© 2025 | Metodologías Ágiles | Ingeniería de Software</p>
   </footer>
 </body>
 </html>
