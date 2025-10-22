@@ -116,3 +116,77 @@ header p {
 @media (max-width: 560px) {
   .grid { grid-template-columns: repeat(1, 1fr); }
 }
+
+/* ======== MENÚ HAMBURGUESA ======== */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Efecto botón activado */
+.menu-toggle.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-toggle.active div:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ======== MENÚ DESPLEGABLE ======== */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(6px);
+  color: white;
+  transition: left 0.4s ease;
+  padding-top: 70px;
+  z-index: 999;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Asegura espacio debajo del menú */
+header {
+  margin-top: 80px;
+}
