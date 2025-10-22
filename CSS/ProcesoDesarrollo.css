@@ -44,7 +44,7 @@ body {
 }
 
 /* =========================
-   Tarjetas de contenido
+   Tarjetas
 ========================= */
 .card {
   background: #ffffff;
@@ -120,22 +120,6 @@ strong {
 }
 
 /* =========================
-   Responsividad
-========================= */
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 2em;
-  }
-
-  .card {
-    padding: 25px;
-  }
-
-  ul {
-    padding: 15px 20px;
-  }
-}
-/* =========================
    Flecha para volver
 ========================= */
 .flecha {
@@ -155,11 +139,27 @@ strong {
 }
 
 .flecha:hover {
-  background: white;
+  background: #f0f0f0;
   transform: scale(1.1);
 }
 
-/* Adaptación para pantallas pequeñas */
+/* =========================
+   Responsividad
+========================= */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  ul {
+    padding: 15px 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .flecha {
     top: 15px;

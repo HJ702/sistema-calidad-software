@@ -98,24 +98,6 @@ tr:nth-child(even) {
   font-size: 0.9rem;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-
-  .header h1 {
-    font-size: 1.6rem;
-  }
-
-  .header h2 {
-    font-size: 1rem;
-  }
-
-  table {
-    font-size: 0.9rem;
-  }
-}
 /* =========================
    Flecha para volver
 ========================= */

@@ -119,6 +119,9 @@
       </ul>
     </section>
 
+    <!-- ===================== -->
+    <!-- NUEVA SECCIÓN: MODELOS -->
+    <!-- ===================== -->
     <section class="models card">
       <h3>Modelos de Proceso de Desarrollo</h3>
       <ul>
@@ -126,10 +129,167 @@
         <li><strong>Modelo Incremental:</strong> el sistema se construye por versiones sucesivas y funcionales.</li>
         <li><strong>Modelo en Espiral:</strong> incorpora análisis de riesgos y desarrollo iterativo.</li>
         <li><strong>Modelo Ágil (Scrum, Kanban, XP):</strong> basado en iteraciones cortas, retroalimentación continua y adaptación al cambio.</li>
-        <li><strong>Modelo en V:</strong> </li>
+        <li><strong>Modelo en V:</strong> combina desarrollo y pruebas en paralelo.</li>
       </ul>
     </section>
 
+    <section class="extra card">
+      <h3>Ventajas y Desventajas del Modelo Incremental</h3>
+      <h4>Ventajas</h4>
+      <ul>
+        <li>Entregas tempranas: los usuarios pueden empezar a usar partes del sistema antes de esperar la versión final.</li>
+        <li>Adaptabilidad ante cambios entre incrementos.</li>
+        <li>Menor riesgo: fallos se detectan antes.</li>
+        <li>Mejora continua y refinamiento progresivo.</li>
+        <li>Más manejable al trabajar por partes.</li>
+      </ul>
+
+      <h4>Desventajas</h4>
+      <ul>
+        <li>Arquitectura global más compleja.</li>
+        <li>Posible acumulación de deuda técnica.</li>
+        <li>Costos mayores si no se controla la integración.</li>
+        <li>Priorización incorrecta puede retrasar valor real.</li>
+      </ul>
+
+      <h4>Cuándo usarlo</h4>
+      <ul>
+        <li>Cuando los requisitos no están completamente definidos al inicio.</li>
+        <li>Proyectos medianos o grandes divididos en fases.</li>
+        <li>Cuando se espera retroalimentación constante de usuarios.</li>
+        <li>En enfoques ágiles híbridos.</li>
+      </ul>
+    </section>
+
+    <section class="spiral card">
+      <h3>Modelo en Espiral</h3>
+      <p>
+        Propuesto por Barry Boehm, combina elementos de los modelos en cascada e iterativos, con un enfoque fuerte en el análisis de riesgos. Cada vuelta de la espiral representa una versión más completa del sistema.
+      </p>
+      <h4>Fases del ciclo:</h4>
+      <ul>
+        <li><strong>Determinación de objetivos:</strong> definir metas, funcionalidades y restricciones.</li>
+        <li><strong>Identificación de riesgos:</strong> evaluar problemas y alternativas.</li>
+        <li><strong>Desarrollo e implementación:</strong> construir el módulo y probarlo.</li>
+        <li><strong>Evaluación y planificación:</strong> revisión de resultados y preparación del siguiente ciclo.</li>
+      </ul>
+
+      <h4>Ventajas</h4>
+      <ul>
+        <li>Excelente gestión de riesgos.</li>
+        <li>Alta flexibilidad ante cambios.</li>
+        <li>Desarrollo progresivo con feedback constante.</li>
+        <li>Ideal para proyectos grandes o inciertos.</li>
+      </ul>
+
+      <h4>Desventajas</h4>
+      <ul>
+        <li>Complejo y costoso en planificación.</li>
+        <li>Difícil de estimar tiempo total.</li>
+        <li>No recomendable para proyectos pequeños.</li>
+      </ul>
+
+      <h4>Cuándo usarlo</h4>
+      <ul>
+        <li>Proyectos grandes y complejos con alta incertidumbre.</li>
+        <li>Cuando el riesgo técnico o de negocio es alto.</li>
+        <li>En proyectos de investigación o evolutivos (I+D).</li>
+      </ul>
+    </section>
+
+    <section class="agil card">
+      <h3>Modelos Ágiles (Scrum, Kanban, XP)</h3>
+      <p>
+        Los modelos ágiles se basan en valores y principios que priorizan la entrega rápida de valor, la adaptabilidad y la colaboración constante entre los equipos.
+      </p>
+
+      <h4>Scrum</h4>
+      <ul>
+        <li><strong>Roles:</strong> Product Owner, Scrum Master, Equipo de Desarrollo.</li>
+        <li><strong>Artefactos:</strong> Product Backlog, Sprint Backlog, Incremento, Definition of Done.</li>
+        <li><strong>Eventos:</strong> Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective.</li>
+      </ul>
+
+      <h4>Kanban</h4>
+      <ul>
+        <li>Flujo continuo visual con tableros.</li>
+        <li>Límites de trabajo en curso (WIP).</li>
+        <li>Mejora continua y detección de cuellos de botella.</li>
+      </ul>
+
+      <h4>Extreme Programming (XP)</h4>
+      <ul>
+        <li>Programación en parejas.</li>
+        <li>Integración continua.</li>
+        <li>Refactorización constante.</li>
+        <li>Pruebas automatizadas (TDD).</li>
+        <li>Cliente integrado al equipo.</li>
+      </ul>
+
+      <h4>Ventajas</h4>
+      <ul>
+        <li>Alta flexibilidad y adaptabilidad.</li>
+        <li>Entrega frecuente de valor.</li>
+        <li>Retroalimentación temprana.</li>
+        <li>Fomento de la colaboración y transparencia.</li>
+      </ul>
+
+      <h4>Desventajas</h4>
+      <ul>
+        <li>Requiere compromiso y cultura ágil.</li>
+        <li>Puede generar desorden sin disciplina.</li>
+        <li>Difícil de escalar en proyectos grandes.</li>
+        <li>Depende del feedback continuo del cliente.</li>
+      </ul>
+
+      <h4>Cuándo usarlo</h4>
+      <ul>
+        <li>Proyectos con requisitos cambiantes o inciertos.</li>
+        <li>Equipos pequeños a medianos con buena comunicación.</li>
+        <li>Cuando se busca mejora continua y entregas frecuentes.</li>
+      </ul>
+
+      <h3>Modelo en V</h3>
+  <p>
+    El <strong>modelo en V</strong> (Validación y Verificación) es una evolución del modelo en cascada 
+    que establece una relación directa entre cada fase de desarrollo y su respectiva fase de prueba. 
+    Su forma en “V” representa cómo el proceso de definición desciende por la rama izquierda (análisis y diseño) 
+    y luego asciende por la derecha (verificación y validación).
+  </p>
+
+  <h4>Fases principales:</h4>
+  <ul>
+    <li><strong>Definición de requisitos:</strong> se identifican y documentan las necesidades del cliente.</li>
+    <li><strong>Diseño del sistema:</strong> se establece la arquitectura general del software y hardware.</li>
+    <li><strong>Diseño detallado:</strong> se definen los componentes, interfaces y lógica interna.</li>
+    <li><strong>Implementación:</strong> se desarrolla el código del sistema según el diseño detallado.</li>
+    <li><strong>Pruebas unitarias:</strong> verifican el funcionamiento individual de cada módulo.</li>
+    <li><strong>Pruebas de integración:</strong> validan la comunicación y compatibilidad entre módulos.</li>
+    <li><strong>Pruebas del sistema:</strong> aseguran que el sistema completo cumple con los requisitos definidos.</li>
+    <li><strong>Pruebas de aceptación:</strong> confirman que el producto final satisface las necesidades del cliente.</li>
+  </ul>
+
+  <h4>Ventajas:</h4>
+  <ul>
+    <li>Alta trazabilidad entre fases de desarrollo y pruebas.</li>
+    <li>Permite detectar errores de forma temprana y organizada.</li>
+    <li>Estructura clara, fácil de entender y de gestionar.</li>
+    <li>Ideal para proyectos con requisitos bien definidos y estables.</li>
+  </ul>
+
+  <h4>Desventajas:</h4>
+  <ul>
+    <li>Poca flexibilidad ante cambios durante el desarrollo.</li>
+    <li>Retroalimentación del usuario limitada hasta las fases finales.</li>
+    <li>No se adapta bien a proyectos con requisitos cambiantes o exploratorios.</li>
+  </ul>
+
+  <h4>Aplicaciones comunes:</h4>
+  <ul>
+    <li>Proyectos donde la validación y la calidad son críticas (aeronáutica, defensa, medicina, automoción).</li>
+    <li>Entornos donde se requiere documentación completa y pruebas rigurosas.</li>
+  </ul>
+    </section>
   </main>
 
   <footer class="footer">

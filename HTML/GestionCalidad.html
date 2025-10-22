@@ -14,6 +14,91 @@
 
   <main class="container">
     <a href="PaginaPrincipal.html" class="flecha" title="Volver a la página principal">←</a>
+
+    <!-- NUEVA SECCIÓN AGREGADA -->
+    <section class="fundamentos card">
+      <h3>Fundamentos de Calidad del Software</h3>
+
+      <h4>¿Qué es la calidad del software?</h4>
+      <p>
+        La calidad del software se refiere al grado en que un sistema, componente o proceso cumple con los requisitos especificados y las necesidades o expectativas del usuario.
+        Un software de calidad no solo funciona correctamente, sino que también es confiable, eficiente, seguro, mantenible y usable.
+      </p>
+
+      <p><strong>Objetivo principal:</strong><br>
+        Garantizar que el producto final sea útil, confiable y cumpla su propósito dentro de las condiciones reales de uso.
+      </p>
+
+      <h4>Métricas de Calidad</h4>
+      <p>
+        <strong>¿Qué son las métricas?</strong><br>
+        Las métricas de software son valores numéricos que permiten medir y evaluar distintos aspectos del desarrollo o del producto final.
+        Ayudan a los equipos de trabajo a tomar decisiones basadas en datos y a mejorar procesos.
+      </p>
+
+      <h5> Tipos de métricas comunes</h5>
+      <ul>
+        <li><strong>Métricas del producto:</strong> Evalúan características del software (número de defectos, complejidad del código, tiempo de respuesta, usabilidad).</li>
+        <li><strong>Métricas del proceso:</strong> Analizan cómo se desarrolla el software (productividad del equipo, duración de fases, tasa de errores por iteración).</li>
+        <li><strong>Métricas del proyecto:</strong> Se relacionan con la gestión y planificación (costo estimado vs. real, porcentaje de avance, cumplimiento de plazos).</li>
+      </ul>
+
+      <h4> Modelos y Estándares de Calidad</h4>
+      <p>Los estándares internacionales definen criterios comunes para evaluar y mejorar la calidad del software.</p>
+
+      <h5>Modelo de Calidad del Software</h5>
+      <table class="tabla-calidad">
+        <thead>
+          <tr><th>Característica</th><th>Descripción</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Funcionalidad</td><td>Capacidad del software para satisfacer las necesidades especificadas.</td></tr>
+          <tr><td>Fiabilidad</td><td>Capacidad del software para mantener su desempeño bajo condiciones específicas.</td></tr>
+          <tr><td>Usabilidad</td><td>Facilidad con la que los usuarios pueden aprender, operar y entender el sistema.</td></tr>
+          <tr><td>Eficiencia</td><td>Relación entre el rendimiento del software y los recursos utilizados.</td></tr>
+          <tr><td>Mantenibilidad</td><td>Facilidad para corregir errores, mejorar o adaptar el software.</td></tr>
+          <tr><td>Portabilidad</td><td>Capacidad de ser transferido a otros entornos o plataformas.</td></tr>
+        </tbody>
+      </table>
+
+      <h5>ISO/IEC 25000 – SQuaRE</h5>
+      <p>
+        La ISO 25000 es la evolución y actualización de la ISO 9126.  
+        Establece un marco integral para la gestión de la calidad del software.
+      </p>
+
+      <ul>
+        <li><strong>ISO 25010:</strong> Define el modelo de calidad del producto y del uso del software.</li>
+        <li><strong>ISO 25020:</strong> Trata sobre métricas de calidad.</li>
+        <li><strong>ISO 25030:</strong> Especifica los requisitos de calidad.</li>
+        <li><strong>ISO 25040–25045:</strong> Guían la evaluación de la calidad.</li>
+      </ul>
+
+      <h5> Modelo de calidad ISO 25010</h5>
+      <table class="tabla-calidad">
+        <thead>
+          <tr><th>Característica</th><th>Descripción</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Adecuación funcional</td><td>Qué tan bien el software satisface las funciones que el usuario necesita.</td></tr>
+          <tr><td>Eficiencia de desempeño</td><td>Uso óptimo de los recursos del sistema.</td></tr>
+          <tr><td>Compatibilidad</td><td>Capacidad de funcionar en distintos entornos y con otros sistemas.</td></tr>
+          <tr><td>Usabilidad</td><td>Facilidad de uso, accesibilidad, aprendizaje y satisfacción del usuario.</td></tr>
+          <tr><td>Fiabilidad</td><td>Estabilidad y consistencia del software ante fallos.</td></tr>
+          <tr><td>Seguridad</td><td>Protección frente a accesos no autorizados o pérdida de información.</td></tr>
+          <tr><td>Mantenibilidad</td><td>Facilidad para modificar, corregir o mejorar el software.</td></tr>
+          <tr><td>Portabilidad</td><td>Capacidad para ser trasladado a diferentes plataformas o sistemas.</td></tr>
+        </tbody>
+      </table>
+
+      <p class="highlight">
+         <strong>Importancia:</strong><br>
+        Permiten medir objetivamente la calidad del producto, facilitan comparaciones entre versiones,
+        garantizan la satisfacción del usuario final y son esenciales para certificaciones de calidad.
+      </p>
+    </section>
+
+    <!-- CONTENIDO ORIGINAL -->
     <section class="intro card">
       <h3>Introducción</h3>
       <p>
@@ -43,7 +128,6 @@
 
     <section class="metrics card">
       <h3>Tipos de Métricas y Ejemplos</h3>
-
       <ul>
         <li>
           <strong>Métricas de calidad:</strong> Miden atributos como la fiabilidad y la usabilidad del software.<br />
@@ -51,14 +135,12 @@
           <em>Tasa de escape de defectos:</em> Revela problemas de calidad antes de que lleguen a los clientes.<br />
           <em>Métricas de seguridad:</em> Evalúan los riesgos de seguridad en el software.
         </li>
-
         <li>
           <strong>Métricas de proceso:</strong> Se enfocan en la eficacia y eficiencia del proceso de desarrollo.<br />
           <em>Cobertura de pruebas:</em> Cuantifica qué porcentaje de código ha sido cubierto por las pruebas.<br />
           <em>Tiempo de ciclo:</em> Mide la rapidez con la que se completan las tareas.<br />
           <em>Frecuencia de implementación:</em> Mide cuántas veces se lanzan cambios a producción.
         </li>
-
         <li>
           <strong>Métricas de tamaño y función:</strong><br />
           <em>Líneas de código (LOC):</em> Miden el tamaño del software.<br />
