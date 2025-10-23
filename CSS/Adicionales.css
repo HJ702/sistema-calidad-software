@@ -154,3 +154,11 @@ em {
     padding: 6px 12px;
   }
 }
+
+/* Centrar la imagen */
+.logo {
+  display: block;       /* necesario para centrar con margin auto */
+  margin: 0 auto 30px;  /* centrado horizontal y espacio inferior */
+  width: 400px;         /* ajusta el tamaño según necesites */
+  height: auto;         /* mantiene la proporción */
+}
